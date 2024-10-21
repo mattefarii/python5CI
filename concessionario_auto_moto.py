@@ -17,11 +17,17 @@ class Veicolo:
 
   def modifica_scheda(self):
     #3 Permette di modificare gli attributi del veicolo
-    self.codice = int(input("inserisci il codice: "))
-    self.marca = input("inserisci la marca: ")
-    self.modello = input("inserisci il modello: ")
-    self.prezzo = int(input("inserisci il prezzo: "))
-    self.annoRevisione = int(input("inserisci l'anno di revisione: "))
+    scelta=int(input("Cosa vuoi modificare? 1-Codice 2-Marca 3-Modello 4-Prezzo 5-Anno revisione :"))
+    if (scelta == 1):
+      self.codice = int(input("inserisci il codice: "))
+    elif (scelta == 2):
+      self.marca = input("inserisci la marca: ")
+    elif (scelta == 3):
+      self.modello = input("inserisci il modello: ")
+    elif (scelta == 4):
+      self.prezzo = int(input("inserisci il prezzo: "))
+    elif (scelta == 5):
+      self.annoRevisione = int(input("inserisci l'anno di revisione: "))
     
 
 
